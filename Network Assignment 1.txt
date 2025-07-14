@@ -1,0 +1,74 @@
+1. What is networking in the context of computer system?
+  - Networking is the practice of connecting multiple devices that allows communication, resource sharing and data exchange.
+2. Why is networking important in modern computing environments
+  - Enables file and data sharing
+  - Centralizes management of resources
+  - Supports internet access and cloud services
+  - Facilitates communication (email, chat, video calls)
+3. Which of the following best describes computer networking? 
+A. Sharing of hardware only 
+B. Sharing of data and resources between computers 
+C. Connecting only to the internet 
+D. None of the above
+Answer: B. Sharing of data and resources between computers.
+4. Differentiate between a network and the internet.
+- Network is a local network of connecting multiple devices
+- Internet is a global network of interconnected computers
+5. Is the internet a type of network or a collection of networks? Why?
+Yes, because Internet is a collection of interconnected networks and type of WAN (wide area network) that connect multiple LAN (local area network)
+6. What are some common uses of the internet in networking?
+- Email, web browsing, online shopping, social networking, file sharing, and remote access
+7. Name and briefly describe any three network topologies.
+ - Star Topology: All devices are connected to a central hub or switch.
+             - Common in home and office network
+  -Mesh topology: Every device is connected to every other device. 
+             - used in high-reliability networks like military or critical infrastructure.
+  - Hybrid Topology: combination of two or more topologies (e.g. bus + mesh).
+             - Common in large, complex networks.
+8. In which topology does every device connect to a central hub or switch? 
+A. Ring 
+B. Star 
+C. Mesh 
+D. Bus
+Answer B. Star Topology
+9. What are the advantages and disadvantages of mesh topology?
+Advantage: 
+-High fault tolerance
+-Reliable and secure
+Disadvantages:
+-Expensive to implement
+-Complex to manage with many devices
+10. LAN: Local Area Network
+ - Covers a small geographical area(office, home, school).
+ - Connects computers and devices within the same location.
+ - Ex. Computer lab in a university
+MAN: Metropolitan Area Network
+-Covers a city or large campus
+-Larger than LAN, smaller than WAN.
+-Ex. City-wide fiber optic network  
+WAN: Wide Area Network
+-Covers a large geographical area like cities or countries.
+-connects multiple LANs using public
+-Ex. The Internet
+11. Which type of network is most commonly used in schools and small offices? Why?
+LAN (Local Area Network).Because High speed, low cost and easy to manage based on covers a small geographical area.
+12. Which network type covers the largest geographical area? 
+A. LAN 
+B. PAN 
+C. MAN 
+D. WAN
+Answer D. WAN (Wide Area Network)
+13. List and define the function of any four common networking devices.
+-Router: connect multiple networks together using IP address
+-Switch: connects multiple devices in a LAN (Local Area Network) using MAC addresses
+-Hub: connects multiple devices in a network that broadcasts data to all connected device
+-Firewall: Monitors and controls incoming and outgoing traffic that protects the network from unauthorized access or attacks.
+14. What is the difference between a switch and a hub?
+ Switch uses MAC addresses to forward data to the correct device 
+-Creates efficient LAN communication
+-Operates at Layer 2(Data Link Layer
+Hub is Broadcasts data to all connected devices
+-less efficient
+-Operates at Layer 1(Physical Layer)
+15. A router is used to connect different networks together.
+ - Answer: True         
