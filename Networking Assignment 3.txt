@@ -1,0 +1,88 @@
+Part A – IP Addressing Basics 
+1. What is an IP address and why is it important in a network? 
+IP Address is Internet Protocol Address that a unique identifier assigned to each device on a network Used to locate and communicate between devices
+2. Differentiate between IPv4 and IPv6 in terms of: 
+IPv4
+Address length: 32-bit address
+Notation format: Written in decimal, separated by dots
+Number of available addresses: Approximately 4.3×10^9(about 4.3 billion)
+Example: 192.168.1.1
+IPv6
+Address length: 128-bit address
+Notation format: Written in hexadecimal, separated by colons
+Number of available addresses: Approximately 3.4×10^38
+Example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+3. Write the binary equivalent of the IPv4 address 192.168.10.1. 
+-Answer: 11000000.10101000.00001010.00000001
+4. Convert the following binary IP address to decimal: 
+11000000.10101000.00000001.00000010 
+-Answer: 192.168.1.2
+5. What are the ranges of Class A, B, and C IPv4 addresses? 
+-Class A range: 1.0.0.0 to 126.255.255.255
+-Class B range: 128.0.0.0 to 191.255.255.255
+-Class C range: 192.0.0.0 to 223.255.255.255
+6. Which IP class does the address 172.16.5.4 belong to? 
+Answer:  It's Private IP address range within Class B that used inside local networks not accessible directly from the internet.
+7. What is the difference between public IP and private IP? List private IP ranges. 
+-Public IP is assigned by ISP, accessible from the internet that used for websites, servers
+-Private IP is used inside local networks that not accessible directly from the internet
+-Common private IP ranges:
+-10.x.x.x
+-172.16.x.x – 172.31.x.x
+-192.168.x.x
+8. What is the role of loopback address in IP networking? 
+-Used for testing on your own device.
+9. Explain the use of static IP vs dynamic IP with examples. 
+Static IP is a permanent, unchanging IP address. Use for devices that need to be consistently found, like servers (web, email) or network printers.
+Benefit: Reliable for inbound connections and remote access.
+Dynamic IP is a temporary IP address assigned by a DHCP server. It can change. Use for most client devices (laptops, phones) and typical home internet connections. 
+Benefit: Automatic configuration and efficient IP address reuse.
+10. What is the default subnet mask for: 
+- Class A ? 255.0.0.0
+- Class B ? 255.255.0.0
+- Class C ? 255.255.255.0
+Part B – Subnetting Concepts & Calculations 
+11. What is Subnetting and why is it used?
+-Subnetting is the process of dividing a large network into smaller sub networks (subnets). 
+-Helps improve network performance, security, and management.
+12. Given the IP address 192.168.1.0/24, how many total IP addresses are available?
+-for /24 network: 2^(32-24)=2^8 =256
+- 256 Total IP address available 
+13. From question 12, how many usable host IPs are there? 
+- In a /24 network, there are 256 total IP addresses. but two addresses are reserved: one for the network address and one for the broadcast address. Therefore, the number of usable host IPs is 256?2=254.
+14. How many subnets can be created from a /24 network if you borrow 2 bits? 
+Answer: 2^2=4 subnet can be created.
+15. What will be the new subnet mask if you borrow 3 bits from a /24 network? 
+Answer: The new subnet mask will be 255.255.255.224. 
+16. Given IP: 192.168.10.0/26 
+- How many hosts per subnet? 
+Answer: /26 network means 26 network bits, leaving 32?26=6 host bits.
+-Number of hosts per subnet = 2 ^ (number of host bits) ?2=2 ^ 6 ?2=64?2=62.
+- How many subnets can be created? 
+Answer: borrowed 2 bits for the subnet (26?24=2).
+- Number of subnets = 2 ^ (number of borrowed bits) = 2^2=4. 
+17. Calculate the first and last usable IP address in the subnet 192.168.10.64/26. 
+-First usable IP address: 192.168.10.65
+-Last usable IP address: 192.168.10.126
+18. Identify the network address and broadcast address of 10.0.0.0/22. 
+Network address: 10.0.0.0
+Broadcast address: 10.0.3.255
+19. Fill in the blanks: 
+- CIDR /30 gives __2 __usable IP addresses. 
+* Total IP = 2 ^ (32?30) = 2 ^ 2 = 4. 
+*Usable IPs = 4?2=2.
+- CIDR /28 supports __14__ hosts per subnet. 
+*Total IPs = 2 ^ (32?28) = 2 ^ 4 =16.
+*Usable hosts = 16?2=14.
+20. You are given the address block 172.16.0.0/20. 
+- How many subnets can be created if you want each subnet to support at most 510 hosts? 
+First find the CIDR prefix needed to support at most 510 hosts
+We need 2^(n) – 2 >= 510 , n = 9.So we need 9 host bits.
+The new CIDR prefix will be 32 – 9 = 23 => /23
+The original network is /20
+The number of borrowed bits is 23 – 20 = 3 bits.
+Number of subnets = 2 ^ (number of borrowed bits) = 2 ^ 3 = 8 subnets.
+- What will be the subnet mask? 
+* /23 network subnet mask is 
+In binary: 11111111.11111111.11111110.00000000
+In decimal: 255.255.254.0
