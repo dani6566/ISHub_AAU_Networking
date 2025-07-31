@@ -1,0 +1,293 @@
+Networking Basics – Comprehensive Questions
+Networking Concepts
+1. Define a computer network. What are its main purposes? 
+A computer network is a group of connected computers and devices that share information and resources.
+Main purposes:
+-Share data like files
+-Share resources like printer
+-Enable communication like emails
+-Improve efficiency by working together over the network.
+2. What is the difference between LAN, WAN, MAN, and PAN? Provide one example of each 
+LAN: Local Area Network
+ - Covers a small geographical area(office, home, school).
+ - Connects computers and devices within the same location.
+ - Ex. Computer lab in a university
+MAN: Metropolitan Area Network
+-Covers a city or large campus
+-Larger than LAN, smaller than WAN.
+-Ex. City-wide fiber optic network  
+WAN: Wide Area Network
+-Covers a large geographical area like cities or countries.
+-connects multiple LANs using public
+-Ex. The Internet
+PAN – Personal Area Network
+-Very small area (usually within 10 meters).
+-Used for communication between personal devices.
+-Often uses Bluetooth or USB.
+-Ex: Smartphone connected to wireless.
+3. Explain client-server and peer-to-peer network models with examples 
+Client-Server Network Model is Centralized control.
+-The server provides services or resources and 
+-The clients request and use them.
+-Example: A school computer lab where students (clients) access files or print documents through a central server.
+Peer-to-Peer (P2P) Network Model is Decentralized and no central server.
+-All computers are equal and can act as both clients and servers. 
+-Each device can share files directly with others.
+Example: File sharing using BitTorrent, where users upload and download files from each other’s computers.
+4. What are the benefits of using a network in an organization? 
+-File Sharing: Easy access and sharing of data between employees.
+-Communication: Fast internal communication through emails, chats, or video calls.
+-Security: Controlled access to sensitive information.
+-Collaboration: Teams can work together on projects in real-time.
+Remote Access: Employees can work from anywhere using the network.
+5. 6. 7. List and explain four common network topologies.
+  - Star Topology: All devices are connected to a central hub or switch.
+             - Common in home and office network
+  -Mesh topology: Every device is connected to every other device. 
+             - used in high-reliability networks like military or critical infrastructure.
+  - Bus Topology: All devices are connected to a single central cable (backbone).
+        - Data travels in both directions, but only one device can transmit at a time.
+  - Hybrid Topology: combination of two or more topologies (e.g. bus + mesh).
+             - Common in large, complex networks.
+Network Devices
+Draw a star and bus topology. Mention one advantage and one disadvantage of each. 
+Which topology is most commonly used in modern LANs? Why?
+Star Toppology
+Advantages:
+-Easy to manage and expand
+-If one device fails, the rest stay connected
+Disadvantages:
+-Central device is a single point of failure
+-More cabling required than bus topology
+Bus Topology
+Advantages:
+-Easy to install
+-Cost-effective for small networks
+Disadvantages:
+-Difficult to troubleshoot
+-Entire network fails if the backbone fails
+8. Define the function of the following devices: 
+-Router: connect multiple networks together using IP address
+-Switch: connects multiple devices in a LAN (Local Area Network) using MAC addresses
+-Hub: connects multiple devices in a network that broadcasts data to all connected device
+Access Point (AP): Extends a wired network wirelessly that allows wireless devices (phones, laptops) to connect to a network.
+9. What is the difference between a modem and a router? 
+A modem connects your home to the internet by converting signals from your Internet Service Provider (ISP)
+A router connects multiple devices within your home to share that internet connection.
+10. Which OSI layers do a switch and router operate on?
+-Switch operates at Layer 2–Data Link Layer (some advanced switches also work at Layer 3)
+-Router operates at Layer 3 – Network Layer
+
+Communication Channels
+11.What are the types of transmission media in networking? Give examples. 
+Types of Communication Channels:
+  1.Wired (Guided Media) like twisted-pair, coaxial, and fiber optic cables
+  2.Wireless (Unguided Media) like radio waves, microwaves, and infrared.
+12. Compare STP and UTP cables. 
+- STP (Shielded Twisted Pair) cables include an additional metallic shield for better protection against electromagnetic interference and crosstalk, making them more expensive and less flexible but suitable for high-interference areas.
+- UTP (Unshielded Twisted Pair) cables lack this shield, making them cheaper, more flexible, and commonly used in general Ethernet networks despite being more susceptible to interference.
+13. What are BNC and RJ45 connectors used for? 
+- BNC (Bayonet Neill-Concelman) connectors are primarily used with coaxial cables for older Ethernet and video connections.
+- RJ45 (Registered Jack 45) connectors are the standard for twisted-pair Ethernet cables in modern local area networks.
+14.Explain the difference between single-mode and multi-mode fiber optic cables. 
+- Single-mode fiber optic cables have a very small core that allows only one light path, enabling longer transmission distances with higher bandwidth and less signal loss. 
+- Multi-mode fiber optic cables have a larger core that allows multiple light paths, resulting in shorter transmission distances and lower bandwidth but at a lower cost.
+15.What are the typical uses of coaxial cable in networking?
+- Coaxial cables are typically used in networking for distributing cable television signals, providing broadband internet access, and historically, in older Ethernet networks.
+Crimping and Cables
+16.List the color codes used in T568A and T568B Ethernet cable standards. 
+T568A:
+Pin 1: White/Green
+Pin 2: Green
+Pin 3: White/Orange
+Pin 4: Blue
+Pin 5: White/Blue
+Pin 6: Orange
+Pin 7: White/Brown
+Pin 8: Brown
+T568B:
+Pin 1: White/Orange
+Pin 2: Orange
+Pin 3: White/Green
+Pin 4: Blue
+Pin 5: White/Blue
+Pin 6: Green
+Pin 7: White/Brown
+Pin 8: Brown
+17.What is the purpose of crossover and straight-through cables? When are they used? 
+- Crossover cables are used to connect two similar devices directly (e.g., PC to PC, switch to switch, router to router) by swapping the transmit and receive pairs at opposite ends. 
+ - Straight-through cables are used to connect dissimilar devices (e.g., PC to switch/hub, router to switch) where the wire order is the same at both ends.
+18. Name three tools used to prepare and test Ethernet cables.
+Three tools used to prepare and test Ethernet cables are:
+ - Crimping tool: Used to attach RJ45 connectors to the cable.
+ - Wire stripper: Used to remove the outer jacket of the cable.
+ - Cable tester: Used to verify the correct wiring and continuity of the cable.
+Communication Models
+19. Describe the three types of communication flows: Simplex, Half-Duplex, and FullDuplex. 
+- Simplex communication is one-way, meaning data flows only in a single direction from sender to receiver, with no possibility of a return path.
+  Ex., traditional radio broadcasts, TV broadcasts
+- Half-duplex communication allows two-way data flow, but only in one direction at a time; devices must take turns transmitting and receiving.
+  Ex. walkie-talkies
+- Full-duplex communication enables simultaneous two-way data flow, allowing both devices to transmit and receive data at the same time.
+  Ex. telephone conversations, modern Ethernet networks
+20.What are the key components of a basic communication system? 
+- Sender – Originates the message/data
+- Receiver – Destination of the message
+- Message – The actual data/information being sent
+- Medium/Channel – The path or transmission medium
+- Protocol – Rules that control communication
+21. Why are protocols important in communication?
+- A protocol in a communication model is essential because it defines the rules and conventions for data exchange between devices.
+ - Protocols ensure that devices can:
+  - Understand each other (by using a common language).
+  - Communicate efficiently and securely.
+  - Handle errors and retransmissions when necessary.
+22. List and explain the 7 layers of the OSI model. 
+  7. Application Layer: 
+  -This layer is closest to the end-user and provides network services directly to user applications. 
+  -It facilitates communication for specific applications like web Browse, email, and file transfer. 
+  Ex. HTTP, FTP, SMTP
+  6.Presentation Layer: 
+  -This layer is responsible for data translation, encryption, and compression. 
+  -It ensures that data is presented in a format that the receiving application can understand, regardless of the format used by the sending application. 
+  Ex JPEG, MPEG, ASCII)
+  5.Session Layer: 
+  - This layer establishes, manages, and terminates communication sessions between applications.
+  - It handles dialog control, allowing applications to communicate in an organized manner. 
+  Ex NetBIOS, RPC
+  4.Transport Layer: 
+ - This layer provides reliable and transparent data transfer between end systems. 
+ - It handles segmentation, reassembly, flow control, and error checking to ensure data integrity and delivery. 
+ Ex. TCP, UDP
+3.Network Layer: 
+- This layer is responsible for logical addressing (IP addresses) and routing data packets across different networks. 
+- It determines the best path for data to travel from source to destination. 
+ Ex. IP, ICMP, ARP
+ 2. Data Link Layer: 
+-This layer provides reliable data transfer across a physical link. 
+-It handles physical addressing (MAC addresses), error detection and correction for the physical layer, and frames data for transmission. 
+Ex. Ethernet, PPP, Frame Relay
+1.Physical Layer: 
+- This layer deals with the physical characteristics of the network medium. 
+- It defines the electrical, mechanical, procedural, and functional specifications 
+Ex cables, connectors, voltage levels, data rates).
+23.Match the following protocols to OSI layers: HTTP, IP, TCP, Ethernet, DNS, ARP 
+HTTP: Application Layer (Layer 7)
+IP: Network Layer (Layer 3)
+TCP: Transport Layer (Layer 4)
+Ethernet: Data Link Layer (Layer 2) 
+DNS: Application Layer (Layer 7)
+ARP: Network Layer (Layer 3)
+24.What is the function of the Transport layer? Name two protocols used there. 
+The Transport layer is responsible for providing reliable and transparent data transfer between end systems (applications).Two protocols commonly used at the Transport layer are:
+-TCP (Transmission Control Protocol) and 
+-UDP (User Datagram Protocol).
+25.Compare OSI and TCP/IP models. Mention one similarity and one difference. 
+Similarity: 
+-Both models are conceptual frameworks that describe the functions of networking protocols and provide a layered approach to communication. 
+-They both aim to standardize communication processes.
+
+Difference:
+- The OSI model has 7 distinct layers, providing a more detailed and theoretical separation of functions, It was developed before protocols
+- The TCP/IP model has 4 or 5 layers, being more practical and directly reflecting the architecture of the internet protocols. It was developed from existing protocols.
+26.What are the layers of the TCP/IP model? 
+ - Application Layer (combines Application, Presentation, and Session layers)
+ - Transport Layer
+ - Internet Layer (equivalent to  Network Layer)
+ - Network Access Layer (combines  Data Link and Physical layers)
+27.In which layer is IP addressing handled in OSI and TCP/IP models?
+In both the OSI model and the TCP/IP model, IP addressing is handled in the Network Layer (OSI) or the Internet Layer (TCP/IP).
+IP Addressing and Subnetting
+28.What is an IP address? Differentiate between IPv4 and IPv6. 
+IP Address is Internet Protocol Address that a unique identifier assigned to each device on a network Used to locate and communicate between devices
+IPv4
+Address length: 32-bit address
+Notation format: Written in decimal, separated by dots
+Number of available addresses: Approximately 4.3×10^9(about 4.3 billion)
+Example: 192.168.1.1
+IPv6
+Address length: 128-bit address
+Notation format: Written in hexadecimal, separated by colons
+Number of available addresses: Approximately 3.4×10^38
+Example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+29.Convert 192.168.1.1 to binary. 
+-Answer: 11000000.10101000.00000001.00000001
+30.Convert 11000000.10101000.00000001.00000100 to decimal.
+-Answer: 192.168.1.4 
+31.Define the IP classes A, B, and C with their address ranges. 
+-Class A range: 1.0.0.0 to 126.255.255.255
+-Class B range: 128.0.0.0 to 191.255.255.255
+-Class C range: 192.0.0.0 to 223.255.255.255
+32.What is the difference between static and dynamic IP addressing? 
+Static IP is a permanent, unchanging IP address. Use for devices that need to be consistently found, like servers (web, email) or network printers.
+Dynamic IP is a temporary IP address assigned by a DHCP server. It can change. Use for most client devices (laptops, phones) and typical home internet connections. 
+33.What is a private IP address? List the private IP ranges. 
+-Private IP is used inside local networks that not accessible directly from the internet
+-Common private IP ranges:
+-10.x.x.x
+-172.16.x.x – 172.31.x.x
+-192.168.x.x
+34.What is the loopback address and what is it used for? 
+ - The loopback address is a special IP address, typically 127.0.0.1, that refers to the local machine itself. It is used for testing network applications and services.It allows a device to send data to itself.
+35.How many hosts can a /24 subnet support?
+ - A /24 subnet can support 254 hosts. 
+36.What is the subnet mask of /26? How many hosts does it support? 
+ - The subnet mask of /26 is 255.255.255.192.
+ - It supports 62 hosts.
+ -Number of host bits = 32 - 26 = 6 bits.
+ -Number of hosts = 2 ^ (6) - 2 = 62 hosts
+37.Calculate the network and broadcast address of 192.168.20.0/27. 
+ - Network Address: 192.168.20.0
+ A /27 means 3 bits are borrowed for the subnet in the last octet, leaving 5 bits for hosts.
+ The block size for /27 in the last octet is 2 
+ 2 ^ (32-27)  =2  ^ 5 = 32.
+ -The subnets in the 192.168.20.x range will be 192.168.20.0, 192.168.20.32, 192.168.20.64, etc.
+ Since the given address is 192.168.20.0, it is the start of a subnet.
+ - Broadcast Address: 192.168.20.31
+-The next subnet starts at 192.168.20.32, so the broadcast address for 192.168.20.0/27 is one less than that, which is 192.168.20.31.
+38.From a /24 network, how many subnets can you create by borrowing 3 bits?
+ - From a /24 network, by borrowing 3 bits, you can create 8 subnets.
+  Number of subnets  = 2 ^ (number of borrowed bits) = 2 ^ 3 = 8
+MAC Address and ARP
+39.What is a MAC address and how is it different from an IP address? 
+ - A MAC (Media Access Control) address is a unique, physical hardware address assigned by the manufacturer to each network interface for local network communication, 
+ - An IP (Internet Protocol) address is a logical, software-configured address that enables communication across different networks and can be dynamic or static.
+40.What is ARP and what is its role in networking?
+ - ARP (Address Resolution Protocol) is a protocol that maps an IP address to a physical MAC address within a local network, playing the crucial role of enabling devices to discover the necessary MAC address for data transmission when only an IP address is known.
+Protocols and Ports
+41.What does HTTP do? On which port does it operate? 
+ - HTTP (Hypertext Transfer Protocol) is an application-layer protocol fundamental to the World Wide Web, allowing users to request and receive web pages and other hypermedia documents, and 
+ It primarily operates on port 80.
+42.What is DNS? What problem does it solve in networking? 
+DNS (Domain Name System) is a hierarchical system that translates human-readable domain names into machine-readable IP addresses, solving the problem of users having to remember complex numerical IP addresses for accessing network resources.
+43.Define DHCP. How does it help in IP configuration? 
+DHCP (Dynamic Host Configuration Protocol) is a network management protocol that automates and centralizes the distribution of network configuration parameters like IP addresses to connected devices, significantly simplifying IP configuration.
+44.List five common networking protocols and their functions.
+- TCP (Transmission Control Protocol) provides reliable and ordered data delivery.
+- IP (Internet Protocol) handles addressing and routing of data packets across networks.
+- HTTP (Hypertext Transfer Protocol) help web Browse by transmitting web documents; 
+- DNS (Domain Name System) translates domain names into IP addresses; and 
+- Ethernet defines the physical and data link layer specifications for wired LAN.
+Switching and Routing
+45.What is the difference between switching and routing?
+ - Switching involves forwarding data frames within the same local network segment based on MAC addresses at the Data Link Layer.
+ - Routing involves forwarding data packets between different networks based on IP addresses at the Network Layer.
+46.Define VLAN. What is its purpose in a network?
+ - A VLAN (Virtual Local Area Network) is a logical grouping of network devices that are not restricted by physical location, serving the purpose of improving network performance by reducing broadcast traffic, enhancing security.
+Security Basics
+47.What is default gateway and why is it important?
+- The default gateway is the IP address of the router on a local network that acts as the exit point for all traffic destined for other networks, making it  devices to access the internet and communicate with resources outside their local subnet.
+48.Name three common types of network threats.
+Three common types of network threats include 
+- Malware is malicious software designed to disrupt or gain unauthorized access. 
+-phishing  where attackers trick individuals into revealing sensitive information.
+-Denial-of-Service (DoS) / Distributed Denial-of-Service (DDoS) attacks, which aim to make network services unavailable by overwhelming them with traffic.
+49.What is a firewall? How does it protect a network?
+- A firewall is a network security system that monitors and controls network traffic based on security rules, protecting a network by filtering traffic, preventing unauthorized access, blocking malicious content, and enforcing security policies.
+50.What is the role of antivirus software in networking?
+The role of antivirus software in networking is to protect individual devices connected to the network by detecting, preventing, and removing malicious software.
+
+BONUS
+Explain what NAT (Network Address Translation) is and where it is commonly used.
+NAT (Network Address Translation) is a method that reassigns IP address information in packet headers, allowing multiple devices on a private network to share a single public IP address when accessing the internet, and it is commonly used in home and small office networks as well as by Internet Service Providers (ISPs).
+
